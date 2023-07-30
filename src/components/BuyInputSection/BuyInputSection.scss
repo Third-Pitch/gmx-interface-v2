@@ -1,0 +1,136 @@
+.buy-input {
+  position: relative;
+
+  .buy-input-top-row {
+    display: inline-flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+  }
+
+  .InputSection-static-input {
+    font-size: var(--font-lg);
+  }
+
+  &.Exchange-swap-section {
+    min-height: 9.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .TokenSelector-box {
+      display: flex;
+      align-items: center;
+      border-radius: 0.4rem;
+      color: #ffffff;
+      min-width: 4.65rem;
+      font-size: 2.1rem;
+      line-height: 2.5rem;
+      justify-content: flex-end;
+
+      &:hover {
+        color: #7885ff;
+      }
+
+      &-symbol {
+        margin-left: 0.8rem;
+      }
+    }
+
+    .Exchange-swap-input-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .Exchange-swap-max {
+      position: unset;
+      color: white;
+      font-size: var(--font-sm);
+    }
+
+    .TokenSelector-caret {
+      margin: 0;
+      margin-right: -0.5rem;
+    }
+
+    .PositionEditor-token-symbol {
+      display: flex;
+      align-items: center;
+      margin-left: 1.4rem;
+
+      img {
+        margin-left: 0.8rem;
+        display: none;
+      }
+    }
+
+    &-top {
+      padding-bottom: 0;
+    }
+
+    .selected-token {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .input-select {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    left: 0;
+    padding-left: 12px;
+    background-color: linear-gradient(90deg, rgba(50, 55, 88, 0.9) 0%, rgba(79, 88, 134, 0.9) 100%);
+  }
+
+  .input-select-item {
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+
+  &:hover .Exchange-swap-section-model {
+    bottom: -130px;
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .Exchange-swap-section-model {
+    //隐藏滚动条
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+
+
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    width: 120px;
+    height: 40px;
+    left: 80px;
+    bottom: -120px;
+    background-color: #372d2d;
+    height: 180px;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.8);
+    overflow-y: scroll;
+  }
+
+  .Exchange-swap-section-model-item {
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 12px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .Exchange-swap-section-model-item label {
+    cursor: pointer;
+  }
+
+  .Exchange-swap-section-model-item:hover {
+    background-color: #564f4f;
+  }
+}

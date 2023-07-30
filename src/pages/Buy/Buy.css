@@ -1,0 +1,13 @@
+.BuyEDDXELP {
+  background: #101124;
+  justify-content: space-between;
+}
+
+.BuyEDDXELP-container {
+  padding: 0 0 3.1rem 0;
+  width: 100%;
+}
+
+.BuyEDDXELP-container .section-title-content {
+  justify-content: flex-start;
+}
