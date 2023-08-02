@@ -15,6 +15,7 @@ import {
 } from "lib/legacy";
 import { bigNumberify, expandDecimals } from "lib/numbers";
 import { InfoTokens, Token, TokenInfo } from "./types";
+import { getAddress } from "ethers/lib/utils";
 const { AddressZero } = ethers.constants;
 
 export function getTokenUrl(chainId: number, address: string) {
@@ -134,7 +135,7 @@ export function getTokenInfo(
     return infoTokens[AddressZero];
   }
 
-  return infoTokens[tokenAddress];
+  return infoTokens[getAddress(tokenAddress)];
 }
 
 export function getLowestFeeTokenForBuyElp(
