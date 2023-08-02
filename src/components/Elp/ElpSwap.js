@@ -34,7 +34,7 @@ import RewardReader from "abis/RewardReader.json";
 import VaultV2 from "abis/VaultV2.json";
 import ElpManager from "abis/ElpManager.json";
 import RewardTracker from "abis/RewardTracker.json";
-import Vester from "abis/Vester.json";
+import Vester from "abis/VesterV2.json";
 import RewardRouter from "abis/RewardRouter.json";
 import Token from "abis/Token.json";
 

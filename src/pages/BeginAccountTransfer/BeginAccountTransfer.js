@@ -10,7 +10,7 @@ import Modal from "components/Modal/Modal";
 import Footer from "components/Footer/Footer";
 
 import Token from "abis/Token.json";
-import Vester from "abis/Vester.json";
+import Vester from "abis/VesterV2.json";
 import RewardTracker from "abis/RewardTracker.json";
 import RewardRouter from "abis/RewardRouter.json";
 

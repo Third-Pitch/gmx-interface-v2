@@ -9,11 +9,12 @@ import Footer from "components/Footer/Footer";
 
 import Vault from "abis/Vault.json";
 import ReaderV2 from "abis/ReaderV2.json";
-import Vester from "abis/Vester.json";
+import Vester from "abis/VesterV2.json";
 import RewardRouter from "abis/RewardRouter.json";
 import RewardReader from "abis/RewardReader.json";
 import Token from "abis/Token.json";
 import ElpManager from "abis/ElpManager.json";
+import RewardTracker from "abis/RewardTracker.json";
 
 import { ethers } from "ethers";
 import {
@@ -200,6 +201,7 @@ function UnstakeModal(props) {
     reservedAmount,
     bonusEddxInFeeEddx,
     setPendingTxns,
+    account,
   } = props;
   const [isUnstaking, setIsUnstaking] = useState(false);
 
@@ -216,6 +218,19 @@ function UnstakeModal(props) {
   ) {
     burnAmount = multiplierPointsAmount.mul(amount).div(bonusEddxInFeeEddx);
   }
+
+  const { data: stakedEddxTracker } = useSWR(
+    [
+      `StakeV2:coldTimes:${BASE}`,
+      BASE,
+      getContract(BASE, "StakedEddxTracker"),
+      "coldTimes",
+      account,
+    ],
+    {
+      fetcher: contractFetcher(undefined, RewardTracker),
+    }
+  );
 
   const shouldShowReductionAmount = true;
   let rewardReductionBasisPoints;
@@ -257,19 +272,62 @@ function UnstakeModal(props) {
     if (isUnstaking) {
       return false;
     }
-    return true;
+    let _time = stakedEddxTracker?.toNumber();
+    if (typeof _time !== "number") {
+      return;
+    }
+    else {
+      return +new Date() > _time * 1000;
+    }
   };
+
+  function getTimeDiff(futureDate) {
+    const currentDate = new Date();
+    const diff = new Date(futureDate) - currentDate;
+    const seconds = Math.ceil(diff / 1000);
+    let timeText = '';
+    // if (seconds >= 31536000) {
+    //   const years = Math.floor(seconds / 31536000);
+    //   timeText = `${years}${(t`years`)}`;
+    // } else if (seconds >= 2592000) {
+    //   const months = Math.floor(seconds / 2592000);
+    //   timeText = `${months}${(t`months`)}`;
+    // } else 
+    if (seconds >= 86400) {
+      const days = Math.floor(seconds / 86400);
+      timeText = `${days}${(t`days`)}`;
+    } else if (seconds >= 3600) {
+      const hours = Math.floor(seconds / 3600);
+      timeText = `${hours}${(t`hours`)}`;
+    } else if (seconds >= 60) {
+      const minutes = Math.floor(seconds / 60);
+      timeText = `${minutes}${(t`minutes`)}`;
+    } else {
+      timeText = `${seconds}${(`seconds`)}`;
+    }
+
+    return timeText;
+  }
 
   const getPrimaryText = () => {
     const error = getError();
+    let _time = stakedEddxTracker?.toNumber();
+    if (typeof _time !== "number") {
+      return t`Unstake`;
+    }
+    else if (+new Date() < _time * 1000) {
+
+      return t`You can unstake after ${getTimeDiff(_time * 1000)}.`;
+    }
     if (error) {
       return error;
     }
     if (isUnstaking) {
       return t`Unstaking...`;
     }
-    return t`Unstake`;
+
   };
+
 
   return (
     <div className="StakeModal">
@@ -371,7 +429,7 @@ function VesterDepositModal(props) {
     setIsDepositing(true);
     const contract = new ethers.Contract(vesterAddress, Vester.abi, library.getSigner());
 
-    callContract(chainId, contract, "deposit", [amount], {
+    callContract(chainId, contract, "deposit", [amount, month], {
       sentMsg: t`Deposit submitted!`,
       failMsg: t`Deposit failed!`,
       successMsg: t`Deposited!`,
@@ -1189,7 +1247,6 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
   const showStakeEsEddxModal = () => {
     setIsStakeModalVisible(true);
     setStakeModalTitle(t`Stake esEDDX`);
-    console.log(123123, processedData);
     setStakeModalMaxAmount(processedData.esEddxBalance);
     setStakeValue("");
     setStakingTokenSymbol("esEDDX");
@@ -1380,23 +1437,26 @@ export default function StakeV2({ setPendingTxns, connectWallet }) {
         nativeTokenSymbol={nativeTokenSymbol}
         wrappedTokenSymbol={wrappedTokenSymbol}
       />
-      <UnstakeModal
-        setPendingTxns={setPendingTxns}
-        isVisible={isUnstakeModalVisible}
-        setIsVisible={setIsUnstakeModalVisible}
-        chainId={chainId}
-        title={unstakeModalTitle}
-        maxAmount={unstakeModalMaxAmount}
-        reservedAmount={unstakeModalReservedAmount}
-        value={unstakeValue}
-        setValue={setUnstakeValue}
-        library={library}
-        unstakingTokenSymbol={unstakingTokenSymbol}
-        rewardRouterAddress={rewardRouterAddress}
-        unstakeMethodName={unstakeMethodName}
-        multiplierPointsAmount={multiplierPointsAmount}
-        bonusEddxInFeeEddx={bonusEddxInFeeEddx}
-      />
+      {
+        account && isUnstakeModalVisible &&
+        <UnstakeModal
+          account={account}
+          setPendingTxns={setPendingTxns}
+          isVisible={isUnstakeModalVisible}
+          setIsVisible={setIsUnstakeModalVisible}
+          chainId={chainId}
+          title={unstakeModalTitle}
+          maxAmount={unstakeModalMaxAmount}
+          reservedAmount={unstakeModalReservedAmount}
+          value={unstakeValue}
+          setValue={setUnstakeValue}
+          library={library}
+          unstakingTokenSymbol={unstakingTokenSymbol}
+          rewardRouterAddress={rewardRouterAddress}
+          unstakeMethodName={unstakeMethodName}
+          multiplierPointsAmount={multiplierPointsAmount}
+          bonusEddxInFeeEddx={bonusEddxInFeeEddx}
+        />}
       <VesterDepositModal
         isVisible={isVesterDepositModalVisible}
         setIsVisible={setIsVesterDepositModalVisible}

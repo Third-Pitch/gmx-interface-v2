@@ -374,16 +374,6 @@ msgstr "{stakingTokenSymbol} 승인중..."
 msgid "Approving..."
 msgstr "승인중..."
 
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Base APR:"
-msgstr "Base APR:"
-
-#: src/components/TokenCard/TokenCard.js
-msgid "Base Goerli APR:"
-msgstr ""
-
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "As there is not enough liquidity in ELP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
 msgstr ""
@@ -448,6 +438,16 @@ msgstr ""
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Balance"
 msgstr "잔고"
+
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+msgid "Base APR:"
+msgstr "Base APR:"
+
+#: src/components/TokenCard/TokenCard.js
+msgid "Base Goerli APR:"
+msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Begin Transfer"
@@ -573,20 +573,20 @@ msgstr "구매 실패"
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Buy on Base"
-msgstr "Base에서 구매"
-
-#: src/components/TokenCard/TokenCard.js
-msgid "Buy on Base Goerli"
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
 msgid "Buy on Avalanche"
 msgstr "Avalanche에서 구매"
 
 #: src/components/TokenCard/TokenCard.js
 msgid "Buy on Avalanche FUJI"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+msgid "Buy on Base"
+msgstr "Base에서 구매"
+
+#: src/components/TokenCard/TokenCard.js
+msgid "Buy on Base Goerli"
 msgstr ""
 
 #: src/pages/BuyEDDX/BuyEDDX.tsx
@@ -2590,6 +2590,7 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
 msgid "Max"
 msgstr ""
 
@@ -2773,6 +2774,10 @@ msgstr "최소 수취량"
 #: src/components/Exchange/OrderEditor.js
 msgid "Minimum received"
 msgstr "최소량 수치 완료"
+
+#: src/components/BuyInputSection/BuyInputSection.tsx
+msgid "Month"
+msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
@@ -3321,13 +3326,13 @@ msgstr "가격이 시장 평군가보다 낮습니다"
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Price on Base"
-msgstr "Base에서 가격"
+msgid "Price on Avalanche"
+msgstr "Avalanche에서 가격"
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Price on Avalanche"
-msgstr "Avalanche에서 가격"
+msgid "Price on Base"
+msgstr "Base에서 가격"
 
 #: src/pages/Actions/Actions.js
 msgid "Profit"
@@ -3897,6 +3902,10 @@ msgid "Stake failed."
 msgstr "스테이킹 실패됨."
 
 #: src/pages/Stake/StakeV2.js
+msgid "Stake period"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
 msgid "Stake submitted!"
 msgstr "스테이킹 제출 완료!"
 
@@ -4430,15 +4439,15 @@ msgid "Traders Referred"
 msgstr "추천한 트레이더"
 
 #: src/components/Referrals/AffiliatesStats.tsx
-msgid "Traders Referred on Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
 msgid "Traders Referred on Avalanche"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
 msgid "Traders Referred on Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+msgid "Traders Referred on Base"
 msgstr ""
 
 #: src/pages/Exchange/Exchange.js
@@ -4722,13 +4731,6 @@ msgstr ""
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-msgid "V1 Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/TradersStats.tsx
-#: src/components/Referrals/TradersStats.tsx
 msgid "V1 Avalanche"
 msgstr ""
 
@@ -4737,6 +4739,13 @@ msgstr ""
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 msgid "V1 Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+msgid "V1 Base"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
@@ -4756,13 +4765,6 @@ msgstr ""
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-msgid "V2 Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/TradersStats.tsx
-#: src/components/Referrals/TradersStats.tsx
 msgid "V2 Avalanche"
 msgstr ""
 
@@ -4771,6 +4773,13 @@ msgstr ""
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 msgid "V2 Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+msgid "V2 Base"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
@@ -4798,19 +4807,19 @@ msgid "Vest"
 msgstr "베스팅"
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
-msgid "Vest with EDDX on Base"
-msgstr ""
-
-#: src/pages/ClaimEsEddx/ClaimEsEddx.js
 msgid "Vest with EDDX on Avalanche"
 msgstr ""
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
-msgid "Vest with ELP on Base"
+msgid "Vest with EDDX on Base"
 msgstr ""
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
 msgid "Vest with ELP on Avalanche"
+msgstr ""
+
+#: src/pages/ClaimEsEddx/ClaimEsEddx.js
+msgid "Vest with ELP on Base"
 msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
@@ -5479,12 +5488,12 @@ msgid "{positionText} {sizeDeltaText}, Price: {0}, Market: {1}"
 msgstr ""
 
 #: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
-msgid "{title} on Base:"
-msgstr "Base {title}"
-
-#: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
 msgid "{title} on Avalanche:"
 msgstr "Avalanche {title}"
+
+#: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
+msgid "{title} on Base:"
+msgstr "Base {title}"
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "{volumeLabel} Volume"

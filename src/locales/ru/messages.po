@@ -374,16 +374,6 @@ msgstr "Одобрение {stakingTokenSymbol}..."
 msgid "Approving..."
 msgstr "Одобрение..."
 
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
-msgid "Base APR:"
-msgstr "Base APR:"
-
-#: src/components/TokenCard/TokenCard.js
-msgid "Base Goerli APR:"
-msgstr ""
-
 #: src/components/Exchange/NoLiquidityErrorModal.tsx
 msgid "As there is not enough liquidity in ELP to swap {0} to {swapTokenSymbol}, you can use the option below to do so:"
 msgstr ""
@@ -448,6 +438,16 @@ msgstr ""
 #: src/components/Synthetics/TradeBox/TradeBox.tsx
 msgid "Balance"
 msgstr "Баланс"
+
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+msgid "Base APR:"
+msgstr "Base APR:"
+
+#: src/components/TokenCard/TokenCard.js
+msgid "Base Goerli APR:"
+msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "Begin Transfer"
@@ -573,20 +573,20 @@ msgstr "Покупка не удалась."
 
 #: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
-msgid "Buy on Base"
-msgstr "Купить на Base"
-
-#: src/components/TokenCard/TokenCard.js
-msgid "Buy on Base Goerli"
-msgstr ""
-
-#: src/components/TokenCard/TokenCard.js
-#: src/components/TokenCard/TokenCard.js
 msgid "Buy on Avalanche"
 msgstr "Купить на Avalanche"
 
 #: src/components/TokenCard/TokenCard.js
 msgid "Buy on Avalanche FUJI"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
+#: src/components/TokenCard/TokenCard.js
+msgid "Buy on Base"
+msgstr "Купить на Base"
+
+#: src/components/TokenCard/TokenCard.js
+msgid "Buy on Base Goerli"
 msgstr ""
 
 #: src/pages/BuyEDDX/BuyEDDX.tsx
@@ -2590,6 +2590,7 @@ msgstr ""
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
+#: src/pages/Stake/StakeV2.js
 msgid "Max"
 msgstr ""
 
@@ -2773,6 +2774,10 @@ msgstr "Мин. Приём"
 #: src/components/Exchange/OrderEditor.js
 msgid "Minimum received"
 msgstr "Минимум получен"
+
+#: src/components/BuyInputSection/BuyInputSection.tsx
+msgid "Month"
+msgstr ""
 
 #: src/components/Exchange/SwapBox.js
 #: src/pages/Dashboard/DashboardV2.js
@@ -3321,13 +3326,13 @@ msgstr "Цена ниже Маркированной Цены"
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Price on Base"
-msgstr "Цена на Base"
+msgid "Price on Avalanche"
+msgstr "Цена на Avalanche"
 
 #: src/pages/Dashboard/DashboardV2.js
 #: src/pages/Stake/StakeV2.js
-msgid "Price on Avalanche"
-msgstr "Цена на Avalanche"
+msgid "Price on Base"
+msgstr "Цена на Base"
 
 #: src/pages/Actions/Actions.js
 msgid "Profit"
@@ -3897,6 +3902,10 @@ msgid "Stake failed."
 msgstr "Стакинг не прошла."
 
 #: src/pages/Stake/StakeV2.js
+msgid "Stake period"
+msgstr ""
+
+#: src/pages/Stake/StakeV2.js
 msgid "Stake submitted!"
 msgstr "Стакинг принята!"
 
@@ -4430,15 +4439,15 @@ msgid "Traders Referred"
 msgstr "Привлеченные Трейдеров"
 
 #: src/components/Referrals/AffiliatesStats.tsx
-msgid "Traders Referred on Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
 msgid "Traders Referred on Avalanche"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
 msgid "Traders Referred on Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+msgid "Traders Referred on Base"
 msgstr ""
 
 #: src/pages/Exchange/Exchange.js
@@ -4722,13 +4731,6 @@ msgstr ""
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-msgid "V1 Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/TradersStats.tsx
-#: src/components/Referrals/TradersStats.tsx
 msgid "V1 Avalanche"
 msgstr ""
 
@@ -4737,6 +4739,13 @@ msgstr ""
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 msgid "V1 Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+msgid "V1 Base"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
@@ -4756,13 +4765,6 @@ msgstr ""
 #: src/components/Referrals/AffiliatesStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
-msgid "V2 Base"
-msgstr ""
-
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/AffiliatesStats.tsx
-#: src/components/Referrals/TradersStats.tsx
-#: src/components/Referrals/TradersStats.tsx
 msgid "V2 Avalanche"
 msgstr ""
 
@@ -4771,6 +4773,13 @@ msgstr ""
 #: src/components/Referrals/TradersStats.tsx
 #: src/components/Referrals/TradersStats.tsx
 msgid "V2 Avalanche Fuji"
+msgstr ""
+
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/AffiliatesStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+#: src/components/Referrals/TradersStats.tsx
+msgid "V2 Base"
 msgstr ""
 
 #: src/components/Referrals/AffiliatesStats.tsx
@@ -4798,19 +4807,19 @@ msgid "Vest"
 msgstr "Вестинг"
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
-msgid "Vest with EDDX on Base"
-msgstr ""
-
-#: src/pages/ClaimEsEddx/ClaimEsEddx.js
 msgid "Vest with EDDX on Avalanche"
 msgstr ""
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
-msgid "Vest with ELP on Base"
+msgid "Vest with EDDX on Base"
 msgstr ""
 
 #: src/pages/ClaimEsEddx/ClaimEsEddx.js
 msgid "Vest with ELP on Avalanche"
+msgstr ""
+
+#: src/pages/ClaimEsEddx/ClaimEsEddx.js
+msgid "Vest with ELP on Base"
 msgstr ""
 
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
@@ -5479,12 +5488,12 @@ msgid "{positionText} {sizeDeltaText}, Price: {0}, Market: {1}"
 msgstr ""
 
 #: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
-msgid "{title} on Base:"
-msgstr "{title} на Base:"
-
-#: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
 msgid "{title} on Avalanche:"
 msgstr "{title} на Avalanche:"
+
+#: src/components/StatsTooltip/ChainsStatsTooltipRow.tsx
+msgid "{title} on Base:"
+msgstr "{title} на Base:"
 
 #: src/pages/Dashboard/DashboardV1.js
 msgid "{volumeLabel} Volume"
