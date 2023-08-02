@@ -115,6 +115,7 @@ export default function DashboardV2() {
   let { total: totalEddxSupply } = useTotalEddxSupply();
 
   const currentVolumeInfo = useVolumeInfo();
+  console.log(12313, currentVolumeInfo, currentVolumeInfo?.[chainId],chainId)
 
   const positionStatsInfo = getPositionStats(positionStats);
 
@@ -539,19 +540,7 @@ export default function DashboardV2() {
                     <Trans>24h Volume</Trans>
                   </div>
                   <div>
-                    <TooltipComponent
-                      position="right-bottom"
-                      className="nowrap"
-                      handle={`$${formatAmount(currentVolumeInfo?.[chainId], USD_DECIMALS, 0, true)}`}
-                      renderContent={() => (
-                        <ChainsStatsTooltipRow
-                          title={t`Volume`}
-                          baseValue={currentVolumeInfo?.[BASE]}
-                          avaxValue={currentVolumeInfo?.[AVALANCHE]}
-                          total={currentVolumeInfo?.total}
-                        />
-                      )}
-                    />
+                    ${formatAmount(currentVolumeInfo?.[chainId], USD_DECIMALS, 0, true)}
                   </div>
                 </div>
                 <div className="App-card-row">
@@ -1021,16 +1010,14 @@ export default function DashboardV2() {
                                 <>
                                   <StatsTooltipRow
                                     label={t`Pool Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
+                                    value={`${formatKeyAmount(tokenInfo, "managedAmount", token.decimals, 0, true)} ${token.symbol
+                                      }`}
                                     showDollar={false}
                                   />
                                   <StatsTooltipRow
                                     label={t`Target Min Amount`}
-                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 0, true)} ${
-                                      token.symbol
-                                    }`}
+                                    value={`${formatKeyAmount(tokenInfo, "bufferAmount", token.decimals, 0, true)} ${token.symbol
+                                      }`}
                                     showDollar={false}
                                   />
                                   <StatsTooltipRow

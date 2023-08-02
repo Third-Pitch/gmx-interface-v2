@@ -10,9 +10,9 @@ export const TESTNET = 97;
 export const ETH_MAINNET = 1;
 export const AVALANCHE = 43114;
 export const AVALANCHE_FUJI = 43113;
-export const BASE = 42161;
+export const BASE = 84531;
 // export const BASE_GOERLI = 421613;
-export const BASE_GOERLI = 84531;
+export const BASE_GOERLI = 42161;
 export const FEES_HIGH_BPS = 50;
 
 // TODO take it from web3

@@ -4,8 +4,10 @@ import { getSubgraphUrlKey } from "./localStorage";
 
 const SUBGRAPH_URLS = {
   [BASE]: {
-    stats: "https://subgraph.satsuma-prod.com/3b2ced13c8d9/gmx/gmx-stats/api",
-    referrals: "https://subgraph.satsuma-prod.com/3b2ced13c8d9/gmx/gmx-base-referrals/api",
+    stats: "https://api.studio.thegraph.com/query/45535/test-stats/version/latest",
+    referrals: "https://api.studio.thegraph.com/query/45535/test-referrals/version/latest",
+    // stats: "https://subgraph.satsuma-prod.com/3b2ced13c8d9/gmx/gmx-stats/api",
+    // referrals: "https://subgraph.satsuma-prod.com/3b2ced13c8d9/gmx/gmx-base-referrals/api",
     nissohVault: "https://api.thegraph.com/subgraphs/name/nissoh/gmx-vault",
   },
 
