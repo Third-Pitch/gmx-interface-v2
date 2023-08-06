@@ -180,6 +180,9 @@ export default function TokenCard({ showRedirectModal, redirectPopupTimestamp })
 
           <div className="Home-token-card-option-action">
             <div className="buy">
+            <BuyLink to="/pools" className="default-btn" network={BASE}>
+                <Trans>Buy on BASE</Trans>
+              </BuyLink>
               <BuyLink to="/pools" className="default-btn" network={AVALANCHE_FUJI}>
                 <Trans>Buy on Avalanche FUJI</Trans>
               </BuyLink>
