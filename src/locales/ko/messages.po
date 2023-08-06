@@ -4856,7 +4856,6 @@ msgid "View status."
 msgstr "상태 보기."
 
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "거래량"
 
@@ -5099,6 +5098,10 @@ msgstr ""
 msgid "You can transfer ETH from other networks to Base using any of the below options:"
 msgstr "아래의 옵션중 하나를 사용해, ETH를 Base에 보낼 수 있습니다."
 
+#: src/pages/Stake/StakeV2.js
+msgid "You can unstake after {0}."
+msgstr ""
+
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "You have a <0>pending transfer</0> to {pendingReceiver}."
 msgstr "{pendingReceiver}로 <0>전송 보류중</0>"
@@ -5209,6 +5212,10 @@ msgstr "게정"
 msgid "collateral"
 msgstr "담보"
 
+#: src/pages/Stake/StakeV2.js
+msgid "days"
+msgstr ""
+
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
 msgid "earn"
 msgstr ""
@@ -5222,9 +5229,17 @@ msgstr "수수료"
 msgid "hide"
 msgstr "숨기기"
 
+#: src/pages/Stake/StakeV2.js
+msgid "hours"
+msgstr ""
+
 #: src/pages/Dashboard/DashboardV2.js
 msgid "in liquidity"
 msgstr "유동성"
+
+#: src/pages/Stake/StakeV2.js
+msgid "minutes"
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "not staked"

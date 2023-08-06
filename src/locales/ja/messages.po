@@ -4856,7 +4856,6 @@ msgid "View status."
 msgstr "状況を見る"
 
 #: src/pages/Dashboard/DashboardV1.js
-#: src/pages/Dashboard/DashboardV2.js
 msgid "Volume"
 msgstr "取引高"
 
@@ -5099,6 +5098,10 @@ msgstr ""
 msgid "You can transfer ETH from other networks to Base using any of the below options:"
 msgstr "以下の選択肢のいずれかを使い、ETHを他のネットワークからBaseへ送ることができます。"
 
+#: src/pages/Stake/StakeV2.js
+msgid "You can unstake after {0}."
+msgstr ""
+
 #: src/pages/BeginAccountTransfer/BeginAccountTransfer.js
 msgid "You have a <0>pending transfer</0> to {pendingReceiver}."
 msgstr "{pendingReceiver}への<0>未完了の移転</0> があります。"
@@ -5209,6 +5212,10 @@ msgstr "アカウント"
 msgid "collateral"
 msgstr "担保"
 
+#: src/pages/Stake/StakeV2.js
+msgid "days"
+msgstr ""
+
 #: src/components/Synthetics/MarketCard/MarketCard.tsx
 msgid "earn"
 msgstr ""
@@ -5222,9 +5229,17 @@ msgstr "手数料"
 msgid "hide"
 msgstr "隠す"
 
+#: src/pages/Stake/StakeV2.js
+msgid "hours"
+msgstr ""
+
 #: src/pages/Dashboard/DashboardV2.js
 msgid "in liquidity"
 msgstr "流動性"
+
+#: src/pages/Stake/StakeV2.js
+msgid "minutes"
+msgstr ""
 
 #: src/pages/Dashboard/DashboardV2.js
 msgid "not staked"

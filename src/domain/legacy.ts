@@ -535,7 +535,6 @@ export function useTotalEddxStaked() {
     let total = bigNumberify(stakedEddxSupplyBase)!.add(stakedEddxSupplyAvax);
     totalStakedEddx.current = total;
   }
-
   return {
     avax: stakedEddxSupplyAvax,
     base: stakedEddxSupplyBase,

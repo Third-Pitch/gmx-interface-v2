@@ -115,7 +115,6 @@ export default function DashboardV2() {
   let { total: totalEddxSupply } = useTotalEddxSupply();
 
   const currentVolumeInfo = useVolumeInfo();
-  console.log(12313, currentVolumeInfo, currentVolumeInfo?.[chainId],chainId)
 
   const positionStatsInfo = getPositionStats(positionStats);
 
