@@ -325,7 +325,7 @@ function UnstakeModal(props) {
     if (isUnstaking) {
       return t`Unstaking...`;
     }
-
+    return t`Unstake`;
   };
 
 
