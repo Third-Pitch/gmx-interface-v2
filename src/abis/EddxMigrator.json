@@ -1,7 +1,7 @@
 {
   "_format": "hh-sol-artifact-1",
-  "contractName": "GmxMigrator",
-  "sourceName": "contracts/gmx/GmxMigrator.sol",
+  "contractName": "EddxMigrator",
+  "sourceName": "contracts/eddx/EddxMigrator.sol",
   "abi": [
     {
       "inputs": [
@@ -260,7 +260,7 @@
     },
     {
       "inputs": [],
-      "name": "gmxPrice",
+      "name": "eddxPrice",
       "outputs": [
         {
           "internalType": "uint256",
@@ -280,7 +280,7 @@
         },
         {
           "internalType": "uint256",
-          "name": "_gmxPrice",
+          "name": "_eddxPrice",
           "type": "uint256"
         },
         {

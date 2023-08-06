@@ -39,7 +39,7 @@ export async function callContract(
     if (opts.value) {
       txnOpts.value = opts.value;
     }
-
+    
     txnOpts.gasLimit = opts.gasLimit ? opts.gasLimit : await getGasLimit(contract, method, params, opts.value);
 
     await setGasPrice(txnOpts, contract.provider, chainId);

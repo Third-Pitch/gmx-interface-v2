@@ -19,7 +19,7 @@
           "type": "uint256"
         }
       ],
-      "name": "StakeGlp",
+      "name": "StakeElp",
       "type": "event"
     },
     {
@@ -44,7 +44,7 @@
           "type": "uint256"
         }
       ],
-      "name": "StakeGmx",
+      "name": "StakeEddx",
       "type": "event"
     },
     {
@@ -63,7 +63,7 @@
           "type": "uint256"
         }
       ],
-      "name": "UnstakeGlp",
+      "name": "UnstakeElp",
       "type": "event"
     },
     {
@@ -88,7 +88,7 @@
           "type": "uint256"
         }
       ],
-      "name": "UnstakeGmx",
+      "name": "UnstakeEddx",
       "type": "event"
     },
     {
@@ -130,14 +130,14 @@
           "type": "uint256[]"
         }
       ],
-      "name": "batchStakeGmxForAccount",
+      "name": "batchStakeEddxForAccount",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
       "inputs": [],
-      "name": "bnGmx",
+      "name": "bnEddx",
       "outputs": [
         {
           "internalType": "address",
@@ -150,7 +150,7 @@
     },
     {
       "inputs": [],
-      "name": "bonusGmxTracker",
+      "name": "bonusEddxTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -170,7 +170,7 @@
     },
     {
       "inputs": [],
-      "name": "claimEsGmx",
+      "name": "claimEsEddx",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -204,7 +204,7 @@
     },
     {
       "inputs": [],
-      "name": "esGmx",
+      "name": "esEddx",
       "outputs": [
         {
           "internalType": "address",
@@ -217,7 +217,7 @@
     },
     {
       "inputs": [],
-      "name": "feeGlpTracker",
+      "name": "feeElpTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -230,7 +230,7 @@
     },
     {
       "inputs": [],
-      "name": "feeGmxTracker",
+      "name": "feeEddxTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -243,7 +243,7 @@
     },
     {
       "inputs": [],
-      "name": "glp",
+      "name": "elp",
       "outputs": [
         {
           "internalType": "address",
@@ -256,7 +256,7 @@
     },
     {
       "inputs": [],
-      "name": "glpManager",
+      "name": "elpManager",
       "outputs": [
         {
           "internalType": "address",
@@ -269,7 +269,7 @@
     },
     {
       "inputs": [],
-      "name": "glpVester",
+      "name": "elpVester",
       "outputs": [
         {
           "internalType": "address",
@@ -282,7 +282,7 @@
     },
     {
       "inputs": [],
-      "name": "gmx",
+      "name": "eddx",
       "outputs": [
         {
           "internalType": "address",
@@ -295,7 +295,7 @@
     },
     {
       "inputs": [],
-      "name": "gmxVester",
+      "name": "eddxVester",
       "outputs": [
         {
           "internalType": "address",
@@ -323,22 +323,22 @@
       "inputs": [
         {
           "internalType": "bool",
-          "name": "_shouldClaimGmx",
+          "name": "_shouldClaimEddx",
           "type": "bool"
         },
         {
           "internalType": "bool",
-          "name": "_shouldStakeGmx",
+          "name": "_shouldStakeEddx",
           "type": "bool"
         },
         {
           "internalType": "bool",
-          "name": "_shouldClaimEsGmx",
+          "name": "_shouldClaimEsEddx",
           "type": "bool"
         },
         {
           "internalType": "bool",
-          "name": "_shouldStakeEsGmx",
+          "name": "_shouldStakeEsEddx",
           "type": "bool"
         },
         {
@@ -371,62 +371,62 @@
         },
         {
           "internalType": "address",
-          "name": "_gmx",
+          "name": "_eddx",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_esGmx",
+          "name": "_esEddx",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_bnGmx",
+          "name": "_bnEddx",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_glp",
+          "name": "_elp",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_stakedGmxTracker",
+          "name": "_stakedEddxTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_bonusGmxTracker",
+          "name": "_bonusEddxTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_feeGmxTracker",
+          "name": "_feeEddxTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_feeGlpTracker",
+          "name": "_feeElpTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_stakedGlpTracker",
+          "name": "_stakedElpTracker",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_glpManager",
+          "name": "_elpManager",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_gmxVester",
+          "name": "_eddxVester",
           "type": "address"
         },
         {
           "internalType": "address",
-          "name": "_glpVester",
+          "name": "_elpVester",
           "type": "address"
         }
       ],
@@ -467,11 +467,11 @@
         },
         {
           "internalType": "uint256",
-          "name": "_minGlp",
+          "name": "_minElp",
           "type": "uint256"
         }
       ],
-      "name": "mintAndStakeGlp",
+      "name": "mintAndStakeElp",
       "outputs": [
         {
           "internalType": "uint256",
@@ -491,11 +491,11 @@
         },
         {
           "internalType": "uint256",
-          "name": "_minGlp",
+          "name": "_minElp",
           "type": "uint256"
         }
       ],
-      "name": "mintAndStakeGlpETH",
+      "name": "mintAndStakeElpETH",
       "outputs": [
         {
           "internalType": "uint256",
@@ -559,7 +559,7 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeEsGmx",
+      "name": "stakeEsEddx",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -572,7 +572,7 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeGmx",
+      "name": "stakeEddx",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -590,14 +590,14 @@
           "type": "uint256"
         }
       ],
-      "name": "stakeGmxForAccount",
+      "name": "stakeEddxForAccount",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
     },
     {
       "inputs": [],
-      "name": "stakedGlpTracker",
+      "name": "stakedElpTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -610,7 +610,7 @@
     },
     {
       "inputs": [],
-      "name": "stakedGmxTracker",
+      "name": "stakedEddxTracker",
       "outputs": [
         {
           "internalType": "address",
@@ -630,7 +630,7 @@
         },
         {
           "internalType": "uint256",
-          "name": "_glpAmount",
+          "name": "_elpAmount",
           "type": "uint256"
         },
         {
@@ -644,7 +644,7 @@
           "type": "address"
         }
       ],
-      "name": "unstakeAndRedeemGlp",
+      "name": "unstakeAndRedeemElp",
       "outputs": [
         {
           "internalType": "uint256",
@@ -659,7 +659,7 @@
       "inputs": [
         {
           "internalType": "uint256",
-          "name": "_glpAmount",
+          "name": "_elpAmount",
           "type": "uint256"
         },
         {
@@ -673,7 +673,7 @@
           "type": "address"
         }
       ],
-      "name": "unstakeAndRedeemGlpETH",
+      "name": "unstakeAndRedeemElpETH",
       "outputs": [
         {
           "internalType": "uint256",
@@ -692,7 +692,7 @@
           "type": "uint256"
         }
       ],
-      "name": "unstakeEsGmx",
+      "name": "unstakeEsEddx",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
@@ -705,7 +705,7 @@
           "type": "uint256"
         }
       ],
-      "name": "unstakeGmx",
+      "name": "unstakeEddx",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
