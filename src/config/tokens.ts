@@ -789,23 +789,23 @@ export const EXPLORER_LINKS = {
   [BASE_GOERLI]: {
     ETH: {
       coingecko: "https://www.coingecko.com/en/coins/weth",
-      base: "https://goerli.arbiscan.io/0xEe01c0CD76354C383B8c7B4e65EA88D00B06f36f",
+      base: "https://goerli.basescan.org/0xEe01c0CD76354C383B8c7B4e65EA88D00B06f36f",
     },
     BTC: {
       coingecko: "https://www.coingecko.com/en/coins/bitcoin-avalanche-bridged-btc-b",
-      base: "https://goerli.arbiscan.io/0xCcF73F4Dcbbb573296BFA656b754Fe94BB957d62",
+      base: "https://goerli.basescan.org/0xCcF73F4Dcbbb573296BFA656b754Fe94BB957d62",
     },
     USDC: {
       coingecko: "https://www.coingecko.com/en/coins/usd-coin",
-      base: "https://goerli.arbiscan.io/0x3eBDeaA0DB3FfDe96E7a0DBBAFEC961FC50F725F",
+      base: "https://goerli.basescan.org/0x3eBDeaA0DB3FfDe96E7a0DBBAFEC961FC50F725F",
     },
     USDT: {
       coingecko: "https://www.coingecko.com/en/coins/tether",
-      base: "https://goerli.arbiscan.io/0x50df4892Bd13f01E4e1Cd077ff394A8fa1A3fD7c",
+      base: "https://goerli.basescan.org/0x50df4892Bd13f01E4e1Cd077ff394A8fa1A3fD7c",
     },
     DAI: {
       coingecko: "https://www.coingecko.com/en/coins/dai",
-      base: "https://goerli.arbiscan.io/0x51290cb93bE5062A6497f16D9cd3376Adf54F920",
+      base: "https://goerli.basescan.org/0x51290cb93bE5062A6497f16D9cd3376Adf54F920",
     },
     SOL: {
       coingecko: "https://www.coingecko.com/en/coins/solana",

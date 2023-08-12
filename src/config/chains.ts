@@ -218,7 +218,7 @@ export const NETWORK_METADATA: { [chainId: number]: NetworkMetadata } = {
       decimals: 18,
     },
     rpcUrls: RPC_PROVIDERS[BASE_GOERLI],
-    blockExplorerUrls: ["https://goerli.arbiscan.io/"],
+    blockExplorerUrls: ["https://goerli.basescan.org/"],
   },
   [BASE]: {
     chainId: "0x" + BASE.toString(16),
@@ -307,7 +307,7 @@ export function getExplorerUrl(chainId) {
   } else if (chainId === TESTNET) {
     return "https://testnet.bscscan.com/";
   } else if (chainId === BASE_GOERLI) {
-    return "https://goerli.arbiscan.io/";
+    return "https://goerli.basescan.org/";
   } else if (chainId === BASE) {
     return "https://arbiscan.io/";
   } else if (chainId === AVALANCHE) {
