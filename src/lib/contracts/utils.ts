@@ -35,7 +35,6 @@ export async function getGasLimit(contract: Contract, method, params: any[] = []
   if (!value) {
     value = defaultValue;
   }
-  console.log(123123123,contract,contract.estimateGas,method);
   let gasLimit = await contract.estimateGas[method](...params, { value });
 
   if (gasLimit.lt(22000)) {

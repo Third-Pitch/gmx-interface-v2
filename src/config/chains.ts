@@ -90,16 +90,21 @@ const constants = {
     positionReaderPropsLength: 9,
     v2: true,
 
-    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
-    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
+    // SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
+    // INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0003"),
+    // // contract requires that execution fee be strictly greater than instead of gte
+    // DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
+
+    SWAP_ORDER_EXECUTION_GAS_FEE: parseEther("0.01"),
+    INCREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.01"),
     // contract requires that execution fee be strictly greater than instead of gte
-    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.000300001"),
+    DECREASE_ORDER_EXECUTION_GAS_FEE: parseEther("0.0100001"),
   },
 
   [BASE]: {
     nativeTokenSymbol: "ETH",
     wrappedTokenSymbol: "WETH",
-    defaultCollateralSymbol: "USDC.e",
+    defaultCollateralSymbol: "ETH",
     defaultFlagOrdersEnabled: false,
     positionReaderPropsLength: 9,
     v2: true,

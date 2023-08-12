@@ -153,7 +153,7 @@ export default function TradeHistory(props) {
         if (!token) {
           return defaultMsg;
         }
-        return t`Swap ${formatAmount(params.tokenAmount, token.decimals, 4, true)} ${token.symbol} for ${formatAmount(
+        return t`Swap ${formatAmount(params.amount, token.decimals, 4, true)} ${token.symbol} for ${formatAmount(
           params.usdgAmount,
           18,
           4,

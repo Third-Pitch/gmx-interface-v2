@@ -544,7 +544,7 @@ export default function OrdersList(props) {
   }, [orders, onEditClick, onCancelClick, infoTokens, positionsMap, hideActions, chainId, account]);
 
   return (
-    <React.Fraement>
+    <React.Fragment>
       <table className="Exchange-list Orders App-box large">
         <tbody>
           {renderHead()}
@@ -574,6 +574,6 @@ export default function OrdersList(props) {
           savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
         />
       )}
-    </React.Fraement>
+    </React.Fragment>
   );
 }

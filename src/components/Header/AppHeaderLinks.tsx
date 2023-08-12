@@ -89,6 +89,15 @@ export function AppHeaderLinks({
           </a>
         </div>
       )}
+      <div className="App-header-link-container">
+        <HeaderLink
+          to="/slt"
+          redirectPopupTimestamp={redirectPopupTimestamp}
+          showRedirectModal={showRedirectModal}
+        >
+          <Trans>水龙头</Trans>
+        </HeaderLink>
+      </div>
     </div>
   );
 }

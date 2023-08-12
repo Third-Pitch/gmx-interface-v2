@@ -581,6 +581,10 @@ msgid "Buy on Avalanche FUJI"
 msgstr ""
 
 #: src/components/TokenCard/TokenCard.js
+msgid "Buy on BASE"
+msgstr ""
+
+#: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
 msgid "Buy on Base"
 msgstr "Auf Base kaufen"
@@ -4616,6 +4620,7 @@ msgstr ""
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
+#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js

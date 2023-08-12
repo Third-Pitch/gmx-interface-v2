@@ -1,14 +1,14 @@
 import { BASE, BASE_GOERLI, AVALANCHE, MAINNET } from "./chains";
 
-export const EDDX_STATS_API_URL = "http://localhost:3113/api";
+export const EDDX_STATS_API_URL = "http://192.168.1.82:3113/api";
 
 const BACKEND_URLS = {
-  default: "http://localhost:3123/api",
+  default: "http://192.168.1.117:3123/api",
 
   [MAINNET]: "https://gambit-server-staging.uc.r.appspot.com",
   [BASE_GOERLI]: "https://gambit-server-devnet.uc.r.appspot.com",
-  [BASE]: "http://localhost:3123/api",
-  [AVALANCHE]: "http://localhost:3123/api",
+  [BASE]: "http://192.168.1.117:3123/api",
+  [AVALANCHE]: "http://192.168.1.117:3123/api",
 };
 
 export function getServerBaseUrl(chainId: number) {

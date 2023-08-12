@@ -2,7 +2,7 @@ import { BASE, BASE_GOERLI, AVALANCHE, AVALANCHE_FUJI } from "./chains";
 import queryString from "query-string";
 
 const ORACLE_KEEPER_URLS = {
-  [BASE]: "http://localhost:3123/api",
+  [BASE]: "http://192.168.1.117:3123/api",
 
   [AVALANCHE]: "https://seashell-app-zdvwo.ondigitalocean.app",
 

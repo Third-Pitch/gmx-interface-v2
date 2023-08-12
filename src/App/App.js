@@ -111,6 +111,7 @@ import { SyntheticsFallbackPage } from "pages/SyntheticsFallbackPage/SyntheticsF
 import { SyntheticsPage } from "pages/SyntheticsPage/SyntheticsPage";
 import { SyntheticsStats } from "pages/SyntheticsStats/SyntheticsStats";
 import { roundToTwoDecimals } from "lib/numbers";
+import Slt from "pages/Slt";
 
 if (window?.ethereum?.autoRefreshOnNetworkChange) {
   window.ethereum.autoRefreshOnNetworkChange = false;
@@ -549,8 +550,12 @@ function FullApp() {
                   savedShouldDisableValidationForTesting={savedShouldDisableValidationForTesting}
                 />
               </Route>
+
               <Route exact path="/jobs">
                 <Jobs />
+              </Route>
+              <Route exact path="/slt">
+                <Slt />
               </Route>
               <Route exact path="/buy_eddx">
                 <BuyEDDX />

@@ -581,6 +581,10 @@ msgid "Buy on Avalanche FUJI"
 msgstr "Buy on Avalanche FUJI"
 
 #: src/components/TokenCard/TokenCard.js
+msgid "Buy on BASE"
+msgstr "Buy on BASE"
+
+#: src/components/TokenCard/TokenCard.js
 #: src/components/TokenCard/TokenCard.js
 msgid "Buy on Base"
 msgstr "Buy on Base"
@@ -4619,6 +4623,7 @@ msgstr "Unknown withdrawal"
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
 #: src/pages/Stake/StakeV1.js
+#: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
 #: src/pages/Stake/StakeV2.js
